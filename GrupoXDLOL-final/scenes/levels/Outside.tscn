@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://scenes/props/MushroomBig.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/misc/UI.tscn" type="PackedScene" id=2]
@@ -14,6 +14,8 @@
 [ext_resource path="res://scenes/items/Item.tscn" type="PackedScene" id=12]
 [ext_resource path="res://scenes/characters/Npc.tscn" type="PackedScene" id=13]
 [ext_resource path="res://scenes/misc/Quest.tscn" type="PackedScene" id=14]
+[ext_resource path="res://scenes/props/Grass wall.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/props/Vertical grass wall.tscn" type="PackedScene" id=16]
 
 [node name="Outside" type="Node"]
 
@@ -27,20 +29,28 @@ scale = Vector2( 0.995735, 0.995735 )
 texture = ExtResource( 11 )
 
 [node name="puddle_small2" type="Sprite" parent="."]
-position = Vector2( 441.76, 1575.24 )
+position = Vector2( 820, 1440 )
 scale = Vector2( 0.995735, 0.995735 )
 texture = ExtResource( 11 )
 
 [node name="puddle_big2" type="Sprite" parent="."]
-position = Vector2( 1782.78, 1096.72 )
+position = Vector2( 2218, 1011 )
 scale = Vector2( 1.97507, 1.97507 )
 texture = ExtResource( 10 )
 
 [node name="level" type="YSort" parent="."]
 position = Vector2( 208.024, -128.355 )
 
+[node name="Desconocido" parent="level" instance=ExtResource( 13 )]
+position = Vector2( 1521.98, 3837.35 )
+character_name = "Desconocido"
+dialogs = [ "¿Que haces vos aca afuera? es re peligroso, esta zona esta llena de escarabajos locos. Segui los hongos y metete al refugio que Roberto te va a cuidar", "¡Anda el refugio antes que te agarren!", "Dale man, anda al refugio que aca afuera se esta re pudriendo." ]
+
+[node name="trigger" parent="level/Desconocido" index="2"]
+position = Vector2( 0, 96 )
+
 [node name="Jorgito" parent="level" instance=ExtResource( 13 )]
-position = Vector2( 2062.51, 2957.82 )
+position = Vector2( 7976.98, -1279.65 )
 character_name = "Jorgito"
 
 [node name="Quest" parent="level/Jorgito" instance=ExtResource( 14 )]
@@ -50,140 +60,427 @@ initial_text = "TLDR; bring me 3 Generic Items"
 pending_text = "You forgot? I want 3 Generic Items"
 
 [node name="Character" parent="level" instance=ExtResource( 8 )]
-position = Vector2( 1509.86, 2579.34 )
+position = Vector2( 1549.98, 4358.35 )
 
 [node name="house" parent="level" instance=ExtResource( 5 )]
-position = Vector2( 908.151, 406.509 )
+position = Vector2( 901.976, 615.355 )
 to_scene = "res://scenes/levels/HouseInside.tscn"
 
-[node name="house_outside" type="Position2D" parent="level/house" groups=[
-"spawnpoints",
-]]
+[node name="house_outside" type="Position2D" parent="level/house" groups=["spawnpoints"]]
 position = Vector2( -2.12201, 173.199 )
 
 [node name="flower" parent="level" instance=ExtResource( 7 )]
-position = Vector2( -495.829, 1186.5 )
+position = Vector2( 3078.98, 1083.35 )
+
+[node name="flower" parent="level/flower" instance=ExtResource( 7 )]
+position = Vector2( -766, -1 )
 
 [node name="flower2" parent="level" instance=ExtResource( 7 )]
-position = Vector2( 2000.14, 283.939 )
+position = Vector2( 5110.98, 1094.35 )
 
 [node name="flower3" parent="level" instance=ExtResource( 7 )]
-position = Vector2( 3047.55, 841.074 )
+position = Vector2( 4098.98, 1085.35 )
+
+[node name="Vertical grass wall" parent="level" instance=ExtResource( 16 )]
+position = Vector2( -4003.02, 239.355 )
+rotation = 0.0174533
+
+[node name="Vertical grass wall2" parent="level" instance=ExtResource( 16 )]
+position = Vector2( -4003.02, -2229.65 )
+
+[node name="Vertical grass wall3" parent="level" instance=ExtResource( 16 )]
+position = Vector2( 5808.98, 470.355 )
+
+[node name="Grass wall5" parent="level" instance=ExtResource( 15 )]
+position = Vector2( -4102.02, -2603.65 )
+
+[node name="Grass wall6" parent="level" instance=ExtResource( 15 )]
+position = Vector2( 852.976, -2582.65 )
+
+[node name="Grass wall7" parent="level" instance=ExtResource( 15 )]
+position = Vector2( -4188.02, -2902.65 )
+
+[node name="Grass wall8" parent="level" instance=ExtResource( 15 )]
+position = Vector2( 959.976, -2881.65 )
+
+[node name="Grass wall9" parent="level" instance=ExtResource( 15 )]
+position = Vector2( -4209.02, -3201.65 )
+
+[node name="Grass wall10" parent="level" instance=ExtResource( 15 )]
+position = Vector2( 895.976, -3116.65 )
+
+[node name="Grass wall11" parent="level" instance=ExtResource( 15 )]
+position = Vector2( -4209.02, 5426.35 )
+
+[node name="Grass wall12" parent="level" instance=ExtResource( 15 )]
+position = Vector2( 766.976, 5426.35 )
+
+[node name="Grass wall13" parent="level" instance=ExtResource( 15 )]
+position = Vector2( -4294.02, 5704.35 )
+
+[node name="Grass wall14" parent="level" instance=ExtResource( 15 )]
+position = Vector2( 815.976, 5746.35 )
+
+[node name="Grass wall15" parent="level" instance=ExtResource( 15 )]
+position = Vector2( -4144.02, 6082.35 )
+
+[node name="Grass wall16" parent="level" instance=ExtResource( 15 )]
+position = Vector2( 767.976, 6050.35 )
+
+[node name="Vertical grass wall5" parent="level" instance=ExtResource( 16 )]
+position = Vector2( -4224.02, 290.355 )
+
+[node name="Vertical grass wall6" parent="level" instance=ExtResource( 16 )]
+position = Vector2( -4225.02, -2844.65 )
+
+[node name="Vertical grass wall7" parent="level" instance=ExtResource( 16 )]
+position = Vector2( -4427.02, 260.355 )
+
+[node name="Vertical grass wall8" parent="level" instance=ExtResource( 16 )]
+position = Vector2( -4366.02, -3066.65 )
+
+[node name="Vertical grass wall9" parent="level" instance=ExtResource( 16 )]
+position = Vector2( -4608.02, 320.355 )
+
+[node name="Vertical grass wall10" parent="level" instance=ExtResource( 16 )]
+position = Vector2( -4608.02, -3106.65 )
+
+[node name="Vertical grass wall11" parent="level" instance=ExtResource( 16 )]
+position = Vector2( 6075.98, 582.355 )
+
+[node name="Vertical grass wall12" parent="level" instance=ExtResource( 16 )]
+position = Vector2( 6055.98, -2662.65 )
+
+[node name="Vertical grass wall13" parent="level" instance=ExtResource( 16 )]
+position = Vector2( 6297.98, 1046.35 )
+
+[node name="Vertical grass wall14" parent="level" instance=ExtResource( 16 )]
+position = Vector2( 6317.98, -3166.65 )
+
+[node name="Vertical grass wall15" parent="level" instance=ExtResource( 16 )]
+position = Vector2( 6498.98, 1388.35 )
+
+[node name="Vertical grass wall16" parent="level" instance=ExtResource( 16 )]
+position = Vector2( 6539.98, -2965.65 )
+
+[node name="Vertical grass wall17" parent="level" instance=ExtResource( 16 )]
+position = Vector2( -4810.02, 260.355 )
+
+[node name="Vertical grass wall18" parent="level" instance=ExtResource( 16 )]
+position = Vector2( -4810.02, -3187.65 )
+
+[node name="Vertical grass wall4" parent="level" instance=ExtResource( 16 )]
+position = Vector2( 5787.98, -2263.65 )
+
+[node name="Grass wall" parent="level" instance=ExtResource( 15 )]
+position = Vector2( 897.976, 5154.35 )
+
+[node name="Grass wall2" parent="level" instance=ExtResource( 15 )]
+position = Vector2( -4010.02, 5145.35 )
+
+[node name="Grass wall3" parent="level" instance=ExtResource( 15 )]
+position = Vector2( -3925.02, -2362.65 )
+
+[node name="Grass wall4" parent="level" instance=ExtResource( 15 )]
+position = Vector2( 1007.98, -2352.65 )
 
 [node name="grass" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 1454.14, 1621.06 )
+position = Vector2( 189.976, 2186.35 )
 
 [node name="grass2" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 1610.14, 1777.06 )
+position = Vector2( 321.976, 3309.35 )
 
 [node name="grass3" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 1721.57, 2011.06 )
+position = Vector2( 2242.98, 685.355 )
 
 [node name="grass4" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 1844.14, 1598.78 )
+position = Vector2( 185.976, 4632.36 )
 
 [node name="grass5" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 1977.85, 1821.63 )
+position = Vector2( 2727.98, 3428.35 )
 
 [node name="grass6" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 2278.7, 1520.78 )
+position = Vector2( 2514.98, 4627.36 )
 
 [node name="grass7" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 807.868, 1777.06 )
+position = Vector2( -425.024, 3723.35 )
 
 [node name="grass8" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 741.012, 2011.06 )
+position = Vector2( 2780.98, 2426.35 )
 
 [node name="grass9" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 484.729, 1765.92 )
+position = Vector2( -613.024, 1454.35 )
 
 [node name="grass10" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 295.304, 2022.2 )
+position = Vector2( 2736.98, 4017.35 )
 
 [node name="grass11" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 540.443, 2111.34 )
+position = Vector2( -508.024, 2400.35 )
 
 [node name="grass12" parent="level" instance=ExtResource( 3 )]
-position = Vector2( 61.3066, 1788.2 )
+position = Vector2( -14.0239, 3037.36 )
 
 [node name="grass13" parent="level" instance=ExtResource( 3 )]
-position = Vector2( -217.261, 2122.48 )
+position = Vector2( 2449.98, 1863.35 )
 
 [node name="mushroom_big" parent="level" instance=ExtResource( 1 )]
-position = Vector2( 2278.7, 2345.34 )
+position = Vector2( 886.976, 2979.36 )
 
 [node name="mushroom_small" parent="level" instance=ExtResource( 9 )]
-position = Vector2( 1955.56, 2467.91 )
+position = Vector2( 1961.98, 3534.36 )
+
+[node name="mushroom_small" parent="level/mushroom_small" instance=ExtResource( 9 )]
+position = Vector2( -60, -825 )
+
+[node name="mushroom_small" parent="level/mushroom_small/mushroom_small" instance=ExtResource( 9 )]
+position = Vector2( -1229, -506 )
+
+[node name="mushroom_big6" parent="level" instance=ExtResource( 1 )]
+position = Vector2( -173.024, 1817.35 )
+
+[node name="mushroom_big5" parent="level" instance=ExtResource( 1 )]
+position = Vector2( 1502.98, 555.355 )
+
+[node name="mushroom_big4" parent="level" instance=ExtResource( 1 )]
+position = Vector2( 1534.98, 1971.35 )
+
+[node name="mushroom_big3" parent="level" instance=ExtResource( 1 )]
+position = Vector2( -228.024, 1020.35 )
+
+[node name="mushroom_big2" parent="level" instance=ExtResource( 1 )]
+position = Vector2( 1831.98, 812.355 )
+
+[node name="mushroom_small3" parent="level" instance=ExtResource( 9 )]
+position = Vector2( 1204.98, 2149.35 )
 
 [node name="mushroom_small2" parent="level" instance=ExtResource( 9 )]
-position = Vector2( 2546.13, 2601.62 )
+position = Vector2( 973.976, 3766.35 )
 
 [node name="grass14" parent="level" instance=ExtResource( 3 )]
-position = Vector2( -369.359, -286.035 )
+position = Vector2( -362.024, 7.35498 )
 
 [node name="grass15" parent="level" instance=ExtResource( 3 )]
-position = Vector2( -921.388, -934.964 )
+position = Vector2( -130.024, 4246.35 )
 
 [node name="grass16" parent="level" instance=ExtResource( 3 )]
-position = Vector2( -1711.26, -1401.84 )
+position = Vector2( 2843.98, 284.355 )
 
 [node name="enemy" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 909.861, 2408.58 )
+position = Vector2( -2589.88, 3897.47 )
+
+[node name="enemy" parent="level/enemy" instance=ExtResource( 4 )]
+position = Vector2( 57, -5072 )
+
+[node name="enemy2" parent="level/enemy" instance=ExtResource( 4 )]
+position = Vector2( 548.289, -5426.09 )
+
+[node name="enemy3" parent="level/enemy" instance=ExtResource( 4 )]
+position = Vector2( -682.149, -4965.78 )
+
+[node name="enemy4" parent="level/enemy" instance=ExtResource( 4 )]
+position = Vector2( 34.8691, -4704.64 )
+
+[node name="enemy5" parent="level/enemy" instance=ExtResource( 4 )]
+position = Vector2( 499.599, -4518.75 )
+
+[node name="enemy6" parent="level/enemy" instance=ExtResource( 4 )]
+position = Vector2( -423.149, -4646.12 )
+
+[node name="enemy7" parent="level/enemy" instance=ExtResource( 4 )]
+position = Vector2( -578.149, -5472.76 )
+
+[node name="enemy8" parent="level/enemy" instance=ExtResource( 4 )]
+position = Vector2( 102.351, -5506.12 )
 
 [node name="enemy2" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 1401.15, 2054.49 )
+position = Vector2( -2098.59, 3543.38 )
+
+[node name="enemy" parent="level/enemy2" instance=ExtResource( 4 )]
+position = Vector2( 6791.71, -4874.91 )
+
+[node name="enemy2" parent="level/enemy2" instance=ExtResource( 4 )]
+position = Vector2( 7283, -5229 )
+
+[node name="enemy3" parent="level/enemy2" instance=ExtResource( 4 )]
+position = Vector2( 6052.56, -4768.69 )
+
+[node name="enemy4" parent="level/enemy2" instance=ExtResource( 4 )]
+position = Vector2( 6769.58, -4507.55 )
+
+[node name="enemy5" parent="level/enemy2" instance=ExtResource( 4 )]
+position = Vector2( 7234.31, -4321.66 )
+
+[node name="enemy6" parent="level/enemy2" instance=ExtResource( 4 )]
+position = Vector2( 6311.56, -4449.03 )
+
+[node name="enemy7" parent="level/enemy2" instance=ExtResource( 4 )]
+position = Vector2( 6156.56, -5275.67 )
+
+[node name="enemy8" parent="level/enemy2" instance=ExtResource( 4 )]
+position = Vector2( 6837.06, -5309.03 )
 
 [node name="enemy3" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 170.712, 2514.8 )
+position = Vector2( -3329.02, 4003.69 )
+
+[node name="enemy" parent="level/enemy3" instance=ExtResource( 4 )]
+position = Vector2( 8139.15, 100.78 )
+
+[node name="enemy2" parent="level/enemy3" instance=ExtResource( 4 )]
+position = Vector2( 8630.44, -253.31 )
+
+[node name="enemy3" parent="level/enemy3" instance=ExtResource( 4 )]
+position = Vector2( 7400, 207 )
+
+[node name="enemy4" parent="level/enemy3" instance=ExtResource( 4 )]
+position = Vector2( 8117.02, 468.14 )
+
+[node name="enemy5" parent="level/enemy3" instance=ExtResource( 4 )]
+position = Vector2( 8581.75, 654.03 )
+
+[node name="enemy6" parent="level/enemy3" instance=ExtResource( 4 )]
+position = Vector2( 7659, 526.661 )
+
+[node name="enemy7" parent="level/enemy3" instance=ExtResource( 4 )]
+position = Vector2( 7713, -5.33887 )
+
+[node name="enemy8" parent="level/enemy3" instance=ExtResource( 4 )]
+position = Vector2( 8184.5, -333.339 )
 
 [node name="enemy4" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 887.73, 2775.94 )
+position = Vector2( -2612.01, 4264.83 )
+
+[node name="enemy" parent="level/enemy4" instance=ExtResource( 4 )]
+position = Vector2( 3415.13, -5395.36 )
+
+[node name="enemy2" parent="level/enemy4" instance=ExtResource( 4 )]
+position = Vector2( 3906.42, -5749.45 )
+
+[node name="enemy3" parent="level/enemy4" instance=ExtResource( 4 )]
+position = Vector2( 2675.98, -5289.14 )
+
+[node name="enemy4" parent="level/enemy4" instance=ExtResource( 4 )]
+position = Vector2( 3393, -5028 )
+
+[node name="enemy5" parent="level/enemy4" instance=ExtResource( 4 )]
+position = Vector2( 3857.73, -4842.11 )
+
+[node name="enemy6" parent="level/enemy4" instance=ExtResource( 4 )]
+position = Vector2( 2934.98, -4969.48 )
+
+[node name="enemy7" parent="level/enemy4" instance=ExtResource( 4 )]
+position = Vector2( 2779.98, -5796.12 )
+
+[node name="enemy8" parent="level/enemy4" instance=ExtResource( 4 )]
+position = Vector2( 3460.48, -5829.48 )
 
 [node name="enemy5" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 1352.46, 2961.83 )
+position = Vector2( -2147.28, 4450.72 )
+
+[node name="enemy" parent="level/enemy5" instance=ExtResource( 4 )]
+position = Vector2( -409.599, -3078.25 )
+
+[node name="enemy2" parent="level/enemy5" instance=ExtResource( 4 )]
+position = Vector2( 81.6899, -3432.34 )
+
+[node name="enemy3" parent="level/enemy5" instance=ExtResource( 4 )]
+position = Vector2( -1148.75, -2972.03 )
+
+[node name="enemy4" parent="level/enemy5" instance=ExtResource( 4 )]
+position = Vector2( -431.73, -2710.89 )
+
+[node name="enemy5" parent="level/enemy5" instance=ExtResource( 4 )]
+position = Vector2( 33, -2525 )
+
+[node name="enemy6" parent="level/enemy5" instance=ExtResource( 4 )]
+position = Vector2( -889.748, -2652.37 )
+
+[node name="enemy7" parent="level/enemy5" instance=ExtResource( 4 )]
+position = Vector2( -1044.75, -3479.01 )
+
+[node name="enemy8" parent="level/enemy5" instance=ExtResource( 4 )]
+position = Vector2( -364.248, -3512.37 )
 
 [node name="enemy6" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 144.914, 746.878 )
+position = Vector2( -3070.02, 4323.35 )
 
 [node name="enemy7" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 1766.1, 666.819 )
+position = Vector2( -3225.02, 3496.71 )
+
+[node name="Enemy" parent="level" instance=ExtResource( 4 )]
+position = Vector2( -2593.02, 434.355 )
+
+[node name="Enemy" parent="level/Enemy" instance=ExtResource( 4 )]
+position = Vector2( -33.9999, -356 )
+
+[node name="Enemy" parent="level/Enemy/Enemy" instance=ExtResource( 4 )]
+position = Vector2( 323, -341 )
+
+[node name="Enemy" parent="level/Enemy/Enemy/Enemy" instance=ExtResource( 4 )]
+position = Vector2( 233.638, 2640.09 )
+
+[node name="Enemy2" parent="level/Enemy/Enemy/Enemy" instance=ExtResource( 4 )]
+position = Vector2( 269, 3143 )
+
+[node name="Enemy3" parent="level" instance=ExtResource( 4 )]
+position = Vector2( 2089.98, -906.645 )
+
+[node name="Enemy" parent="level/Enemy3" instance=ExtResource( 4 )]
+position = Vector2( 1437, 54 )
+
+[node name="Enemy2" parent="level/Enemy3" instance=ExtResource( 4 )]
+position = Vector2( 995.638, -10.913 )
+
+[node name="Enemy3" parent="level/Enemy3" instance=ExtResource( 4 )]
+position = Vector2( 595.638, 37.087 )
+
+[node name="Enemy2" parent="level" instance=ExtResource( 4 )]
+position = Vector2( -1598.02, -963.645 )
+
+[node name="Enemy" parent="level/Enemy2" instance=ExtResource( 4 )]
+position = Vector2( 350.638, 25.087 )
+
+[node name="Enemy2" parent="level/Enemy2" instance=ExtResource( 4 )]
+position = Vector2( 620.638, 7.08701 )
+
+[node name="Enemy3" parent="level/Enemy2" instance=ExtResource( 4 )]
+position = Vector2( 1096.64, 52.087 )
 
 [node name="enemy8" parent="level" instance=ExtResource( 4 )]
-position = Vector2( 2446.6, 633.461 )
+position = Vector2( -2544.52, 3463.35 )
 
 [node name="Item" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 1032.97, 1956.3 )
+position = Vector2( 7601.48, -863.645 )
 
 [node name="Item2" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 1234.96, 1710.6 )
+position = Vector2( 7548.48, -1100.65 )
 item_type = "Magic Sword"
 
 [node name="Item3" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 969.666, 1659.36 )
+position = Vector2( 7172.48, -1092.65 )
 item_type = "Coso"
 amount = 3
 
 [node name="Item6" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 2636.78, 2137.18 )
+position = Vector2( 7136.29, -572.82 )
 
 [node name="Item5" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 2838.76, 1891.49 )
+position = Vector2( 7338.27, -818.51 )
 item_type = "Magic Sword"
 
 [node name="Item4" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 2573.47, 1840.24 )
+position = Vector2( 7072.98, -869.76 )
 item_type = "Coso"
 amount = 3
 
 [node name="Item9" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 2911.12, 2411.52 )
+position = Vector2( 7485.48, -330.645 )
 
 [node name="Item8" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 3113.1, 2165.82 )
+position = Vector2( 7612.61, -544.18 )
 item_type = "Magic Sword"
 
 [node name="Item7" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 2847.81, 2114.57 )
+position = Vector2( 7347.32, -595.43 )
 item_type = "Coso"
 amount = 3
 
@@ -191,3 +488,5 @@ amount = 3
 music_track = "res://music/310-world-map-loop.ogg"
 
 [node name="UI" parent="." instance=ExtResource( 2 )]
+
+[editable path="level/Desconocido"]
