@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/props/MushroomBig.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/misc/UI.tscn" type="PackedScene" id=2]
@@ -17,7 +17,6 @@
 [ext_resource path="res://scenes/props/Grass wall.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/props/Vertical grass wall.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/misc/win.gd" type="Script" id=17]
-[ext_resource path="res://scenes/characters/Caja.tscn" type="PackedScene" id=18]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 245.0
@@ -522,38 +521,6 @@ position = Vector2( 2295, 3724 )
 item_type = "Cortadora de pasto"
 
 [node name="grass" parent="." instance=ExtResource( 3 )]
-
-[node name="Caja" parent="." instance=ExtResource( 18 )]
-position = Vector2( -531.606, 115.908 )
-scale = Vector2( 1.52448, 1.52448 )
-
-[node name="Caja2" parent="." instance=ExtResource( 18 )]
-position = Vector2( 547.175, -109.837 )
-scale = Vector2( 1.52448, 1.52448 )
-
-[node name="Caja3" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1683.89, 619.339 )
-scale = Vector2( 1.52448, 1.52448 )
-
-[node name="Caja4" parent="." instance=ExtResource( 18 )]
-position = Vector2( 349.398, 789.147 )
-scale = Vector2( 1.52448, 1.52448 )
-
-[node name="Caja5" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1322.3, 1304.57 )
-scale = Vector2( 1.52448, 1.52448 )
-
-[node name="Caja6" parent="." instance=ExtResource( 18 )]
-position = Vector2( 2245.26, 499.475 )
-scale = Vector2( 1.52448, 1.52448 )
-
-[node name="Caja7" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1296.33, -107.839 )
-scale = Vector2( 1.52448, 1.52448 )
-
-[node name="Caja8" parent="." instance=ExtResource( 18 )]
-position = Vector2( -485.658, 643.312 )
-scale = Vector2( 1.52448, 1.52448 )
 
 [connection signal="body_entered" from="win" to="win" method="_on_body_entered"]
 

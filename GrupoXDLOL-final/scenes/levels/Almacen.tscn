@@ -32,7 +32,10 @@ radius = 46.0
 height = 76.0
 
 [node name="Almacen" type="Node2D"]
+<<<<<<< HEAD
 position = Vector2( -164.049, -19.7988 )
+=======
+>>>>>>> parent of aeade30 (cajas acomodadas outside y caja que_free (no funcional))
 
 [node name="PuddleBig" type="Sprite" parent="."]
 position = Vector2( 7283, -104 )
@@ -934,9 +937,7 @@ position = Vector2( 141.889, 0.395264 )
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, 0 )
 
-[node name="almacen_inside" type="Position2D" parent="." groups=[
-"spawnpoints",
-]]
+[node name="almacen_inside" type="Position2D" parent="." groups=["spawnpoints"]]
 position = Vector2( 556, 354 )
 
 [node name="Puerta dungeon" type="Area2D" parent="."]
