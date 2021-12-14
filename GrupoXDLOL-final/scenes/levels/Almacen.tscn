@@ -24,6 +24,7 @@ extents = Vector2( 785, 559.375 )
 extents = Vector2( 253.25, 592.75 )
 
 [node name="Almacen" type="Node2D"]
+scale = Vector2( 1.00069, 1.00457 )
 
 [node name="PuddleBig" type="Sprite" parent="."]
 position = Vector2( 7283, -104 )
@@ -36,6 +37,7 @@ texture = ExtResource( 10 )
 
 [node name="PuddleSmall3" type="Sprite" parent="."]
 position = Vector2( 4843, -220 )
+scale = Vector2( 0.983903, 1 )
 texture = ExtResource( 11 )
 
 [node name="PuddleBig3" type="Sprite" parent="."]
@@ -486,5 +488,7 @@ position = Vector2( 6579, -4981 )
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, 0 )
 
-[node name="almacen_inside" type="Position2D" parent="." groups=["spawnpoints"]]
+[node name="almacen_inside" type="Position2D" parent="." groups=[
+"spawnpoints",
+]]
 position = Vector2( 556, 354 )

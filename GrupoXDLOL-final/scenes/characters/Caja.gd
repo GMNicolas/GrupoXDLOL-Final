@@ -25,4 +25,6 @@ func _on_caja_entered(area):
 			anims.play("4 ")
 		if hp <= 0 :
 			anims.play("0 ")
+			
+			queue_free()
 	print(hp)
