@@ -227,6 +227,20 @@ position = Vector2( -14.0239, 3037.36 )
 [node name="grass13" parent="level" instance=ExtResource( 3 )]
 position = Vector2( 2449.98, 1863.35 )
 
+[node name="Pasto final" parent="level" instance=ExtResource( 3 )]
+position = Vector2( 5633.98, 1096.35 )
+
+[node name="Sprite" parent="level/Pasto final" index="0"]
+modulate = Color( 0.0627451, 0.607843, 0.282353, 1 )
+self_modulate = Color( 0.0627451, 0.607843, 0.282353, 1 )
+
+[node name="grass17" parent="level/Pasto final" instance=ExtResource( 3 )]
+position = Vector2( 0, 97 )
+
+[node name="Sprite" parent="level/Pasto final/grass17" index="0"]
+modulate = Color( 0.0627451, 0.607843, 0.282353, 1 )
+self_modulate = Color( 0.0627451, 0.607843, 0.282353, 1 )
+
 [node name="mushroom_big" parent="level" instance=ExtResource( 1 )]
 position = Vector2( 886.976, 2979.36 )
 
@@ -504,6 +518,10 @@ shape = SubResource( 1 )
 position = Vector2( 2295, 3724 )
 item_type = "Cortadora de pasto"
 
+[node name="grass" parent="." instance=ExtResource( 3 )]
+
 [connection signal="body_entered" from="win" to="win" method="_on_body_entered"]
 
 [editable path="level/Desconocido"]
+[editable path="level/Pasto final"]
+[editable path="level/Pasto final/grass17"]
