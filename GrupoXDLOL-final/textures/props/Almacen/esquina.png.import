@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/0HP.png-fab9e37f8357463f394a017e38204d89.stex"
+path="res://.import/esquina.png-2b3155b09101fab3cbf21a666cc005bf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Caja/0HP.png"
-dest_files=[ "res://.import/0HP.png-fab9e37f8357463f394a017e38204d89.stex" ]
+source_file="res://textures/props/Almacen/esquina.png"
+dest_files=[ "res://.import/esquina.png-2b3155b09101fab3cbf21a666cc005bf.stex" ]
 
 [params]
 

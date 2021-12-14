@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Entrada.png-0d12cdffae0b1120317f4d51df2ed413.stex"
+path="res://.import/Fondo.png-e295f9f4b98e32eeb0ccbf1e534949d6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/props/Caja/Almacen/Entrada.png"
-dest_files=[ "res://.import/Entrada.png-0d12cdffae0b1120317f4d51df2ed413.stex" ]
+source_file="res://textures/props/Almacen/Fondo.png"
+dest_files=[ "res://.import/Fondo.png-e295f9f4b98e32eeb0ccbf1e534949d6.stex" ]
 
 [params]
 

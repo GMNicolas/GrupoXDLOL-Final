@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/10HP.png-6cc526905a407c9746e08a83d2867024.stex"
+path="res://.import/Fin del pasillo.png-8d104a2ae648ccfc8a596312019d2ca2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Caja/10HP.png"
-dest_files=[ "res://.import/10HP.png-6cc526905a407c9746e08a83d2867024.stex" ]
+source_file="res://textures/props/Almacen/Fin del pasillo.png"
+dest_files=[ "res://.import/Fin del pasillo.png-8d104a2ae648ccfc8a596312019d2ca2.stex" ]
 
 [params]
 

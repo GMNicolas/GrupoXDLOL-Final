@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scenes/misc/MusicTrack.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/misc/UI.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/characters/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://textures/props/Almacen/Entrada.png" type="Texture" id=4]
 [ext_resource path="res://textures/props/Almacen/Pared.png" type="Texture" id=5]
+[ext_resource path="res://textures/props/Almacen/Fondo.png" type="Texture" id=6]
+[ext_resource path="res://textures/props/Almacen/esquina.png" type="Texture" id=7]
 
 [node name="Almacen" type="Node2D"]
 
@@ -13,6 +15,36 @@ position = Vector2( 1173, 948 )
 rotation = 4.71239
 scale = Vector2( 1.86814, 1.97028 )
 texture = ExtResource( 5 )
+
+[node name="Esquina" type="Sprite" parent="."]
+position = Vector2( 2324, -1175 )
+rotation = 1.5708
+scale = Vector2( 1.96567, 2.02333 )
+texture = ExtResource( 7 )
+
+[node name="Fondo" type="Sprite" parent="."]
+position = Vector2( -1378, -69 )
+scale = Vector2( 2.23833, 2.09333 )
+texture = ExtResource( 6 )
+
+[node name="Fondo4" type="Sprite" parent="Fondo"]
+position = Vector2( -20.5511, -596.178 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 6 )
+
+[node name="Fondo3" type="Sprite" parent="Fondo"]
+position = Vector2( 4.91425, 580.892 )
+scale = Vector2( 1, 1 )
+texture = ExtResource( 6 )
+
+[node name="Fondo2" type="Sprite" parent="Fondo"]
+position = Vector2( 579.449, 571.815 )
+scale = Vector2( 0.998883, 0.975319 )
+texture = ExtResource( 6 )
+
+[node name="Fondo" type="Sprite" parent="Fondo"]
+position = Vector2( 572.524, -591.401 )
+texture = ExtResource( 6 )
 
 [node name="Entrada" type="Sprite" parent="."]
 position = Vector2( -64.5, -80.4999 )
