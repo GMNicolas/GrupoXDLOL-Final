@@ -14,3 +14,6 @@
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0, 0 )
+
+[node name="almacen_inside" type="Position2D" parent="." groups=["spawnpoints"]]
+position = Vector2( 556, 354 )

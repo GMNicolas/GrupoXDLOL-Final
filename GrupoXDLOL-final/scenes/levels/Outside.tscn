@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/props/MushroomBig.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/misc/UI.tscn" type="PackedScene" id=2]
@@ -16,6 +16,10 @@
 [ext_resource path="res://scenes/misc/Quest.tscn" type="PackedScene" id=14]
 [ext_resource path="res://scenes/props/Grass wall.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/props/Vertical grass wall.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/misc/win.gd" type="Script" id=17]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 245.0
 
 [node name="Outside" type="Node"]
 
@@ -488,5 +492,18 @@ amount = 3
 music_track = "res://music/310-world-map-loop.ogg"
 
 [node name="UI" parent="." instance=ExtResource( 2 )]
+
+[node name="win" type="Area2D" parent="."]
+position = Vector2( 2555, 4368 )
+script = ExtResource( 17 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="win"]
+shape = SubResource( 1 )
+
+[node name="cortadora de pasto" parent="." instance=ExtResource( 12 )]
+position = Vector2( 2295, 3724 )
+item_type = "Cortadora de pasto"
+
+[connection signal="body_entered" from="win" to="win" method="_on_body_entered"]
 
 [editable path="level/Desconocido"]
