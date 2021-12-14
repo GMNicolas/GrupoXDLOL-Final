@@ -846,9 +846,7 @@ tracks/1/keys = {
 radius = 53.1112
 height = 67.6021
 
-[node name="Player" type="KinematicBody2D" groups=[
-"player",
-]]
+[node name="Player" type="KinematicBody2D" groups=["player"]]
 position = Vector2( 585.638, 309.087 )
 script = ExtResource( 2 )
 
@@ -856,8 +854,8 @@ script = ExtResource( 2 )
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 6.30249, -86.9744 )
 texture = ExtResource( 1 )
-vframes = 4
 hframes = 8
+vframes = 4
 frame = 12
 
 [node name="hitbox" type="CollisionShape2D" parent="."]
@@ -867,8 +865,8 @@ shape = SubResource( 1 )
 
 [node name="player_sword" type="Area2D" parent="."]
 position = Vector2( 6.30249, -86.9744 )
-monitorable = false
 collision_layer = 32
+monitorable = false
 
 [node name="slash" type="CollisionPolygon2D" parent="player_sword"]
 polygon = PoolVector2Array( -134.513, -92.9393, -124.246, 19.4555, -59.4026, 109.155, 76.2278, 112.938, 75.147, 26.4802, -2.66479, 20.5363, -36.1671, -8.64319, -57.2411, -40.5244 )
@@ -915,4 +913,5 @@ shape = SubResource( 18 )
 __meta__ = {
 "_editor_description_": ""
 }
+
 [connection signal="area_entered" from="hurtbox" to="." method="_on_hurtbox_area_entered"]

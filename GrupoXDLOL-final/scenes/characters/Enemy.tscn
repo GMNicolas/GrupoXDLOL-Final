@@ -1159,9 +1159,7 @@ tracks/4/keys = {
 radius = 53.1112
 height = 67.6021
 
-[node name="Enemy" type="KinematicBody2D" groups=[
-"enemies",
-]]
+[node name="Enemy" type="KinematicBody2D" groups=["enemies"]]
 position = Vector2( 585.638, 309.087 )
 script = ExtResource( 1 )
 
@@ -1169,8 +1167,8 @@ script = ExtResource( 1 )
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 6.30249, -86.9744 )
 texture = ExtResource( 2 )
-vframes = 4
 hframes = 8
+vframes = 4
 frame = 9
 
 [node name="hitbox" type="CollisionShape2D" parent="."]
@@ -1197,9 +1195,7 @@ anims/walk_left = SubResource( 15 )
 anims/walk_right = SubResource( 16 )
 anims/walk_up = SubResource( 17 )
 
-[node name="enemy_sword" type="Area2D" parent="." groups=[
-"enemy_weapons",
-]]
+[node name="enemy_sword" type="Area2D" parent="." groups=["enemy_weapons"]]
 position = Vector2( 0, -78.0211 )
 
 [node name="slash" type="CollisionPolygon2D" parent="enemy_sword"]
@@ -1218,5 +1214,6 @@ shape = SubResource( 18 )
 
 [node name="item_spawner" parent="." instance=ExtResource( 3 )]
 item_type = "Bandit Head"
+
 [connection signal="timeout" from="state_changer" to="." method="_on_state_changer_timeout"]
 [connection signal="area_entered" from="hurtbox" to="." method="_on_hurtbox_area_entered" flags=3]

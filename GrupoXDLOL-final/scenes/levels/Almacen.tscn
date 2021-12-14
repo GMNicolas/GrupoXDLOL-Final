@@ -414,19 +414,16 @@ shape = SubResource( 3 )
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Paredes 3"]
 position = Vector2( 9572, 2659 )
 rotation = 1.13272
-scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Paredes 3"]
 position = Vector2( 7822, 4369 )
 rotation = 0.628319
-scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Paredes 3"]
 position = Vector2( 6339, 4339 )
 rotation = -0.523599
-scale = Vector2( 1, 1 )
 shape = SubResource( 3 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Paredes 3"]
