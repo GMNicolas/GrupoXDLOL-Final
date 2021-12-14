@@ -33,7 +33,10 @@ height = 76.0
 
 [node name="Almacen" type="Node2D"]
 <<<<<<< HEAD
+<<<<<<< HEAD
 position = Vector2( -164.049, -19.7988 )
+=======
+>>>>>>> parent of aeade30 (cajas acomodadas outside y caja que_free (no funcional))
 =======
 >>>>>>> parent of aeade30 (cajas acomodadas outside y caja que_free (no funcional))
 
