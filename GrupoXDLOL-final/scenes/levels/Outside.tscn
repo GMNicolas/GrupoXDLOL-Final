@@ -70,7 +70,9 @@ position = Vector2( 1549.98, 4358.35 )
 position = Vector2( 901.976, 615.355 )
 to_scene = "res://scenes/levels/HouseInside.tscn"
 
-[node name="house_outside" type="Position2D" parent="level/house" groups=["spawnpoints"]]
+[node name="house_outside" type="Position2D" parent="level/house" groups=[
+"spawnpoints",
+]]
 position = Vector2( -2.12201, 173.199 )
 
 [node name="flower" parent="level" instance=ExtResource( 7 )]
