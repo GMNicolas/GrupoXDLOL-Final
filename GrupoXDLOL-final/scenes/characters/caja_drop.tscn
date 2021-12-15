@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://textures/props/Caja/10HP.png" type="Texture" id=1]
 [ext_resource path="res://textures/props/Caja/4HP.png" type="Texture" id=2]
 [ext_resource path="res://textures/props/Caja/7HP.png" type="Texture" id=3]
 [ext_resource path="res://textures/props/Caja/0HP Nuevo.png" type="Texture" id=4]
 [ext_resource path="res://scenes/characters/Caja.gd" type="Script" id=5]
+[ext_resource path="res://scenes/misc/ItemSpawner.tscn" type="PackedScene" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -133,7 +134,9 @@ resource_name = "vacia"
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 33.0768, 36.2909 )
 
-[node name="Caja" type="Node2D"]
+[node name="Caja" type="Node2D" groups=[
+"enemies",
+]]
 position = Vector2( 486, 201 )
 scale = Vector2( 0.90087, 0.90087 )
 
@@ -163,5 +166,8 @@ anims/vacia = SubResource( 7 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="caja/StaticBody2D"]
 position = Vector2( 1.39862, 0 )
 shape = SubResource( 8 )
+
+[node name="item_spawner" parent="caja" instance=ExtResource( 6 )]
+position = Vector2( -0.29718, -0.811554 )
 
 [connection signal="area_entered" from="caja" to="caja" method="_on_caja_entered"]

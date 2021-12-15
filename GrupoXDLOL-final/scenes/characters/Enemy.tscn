@@ -1159,7 +1159,9 @@ tracks/4/keys = {
 radius = 53.1112
 height = 67.6021
 
-[node name="Enemy" type="KinematicBody2D" groups=["enemies"]]
+[node name="Enemy" type="KinematicBody2D" groups=[
+"enemies",
+]]
 position = Vector2( 585.638, 309.087 )
 script = ExtResource( 1 )
 
@@ -1195,7 +1197,9 @@ anims/walk_left = SubResource( 15 )
 anims/walk_right = SubResource( 16 )
 anims/walk_up = SubResource( 17 )
 
-[node name="enemy_sword" type="Area2D" parent="." groups=["enemy_weapons"]]
+[node name="enemy_sword" type="Area2D" parent="." groups=[
+"enemy_weapons",
+]]
 position = Vector2( 0, -78.0211 )
 
 [node name="slash" type="CollisionPolygon2D" parent="enemy_sword"]

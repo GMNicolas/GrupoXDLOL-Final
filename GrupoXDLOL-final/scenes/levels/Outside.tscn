@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://scenes/props/MushroomBig.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/misc/UI.tscn" type="PackedScene" id=2]
@@ -18,9 +18,11 @@
 [ext_resource path="res://scenes/props/Vertical grass wall.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/misc/win.gd" type="Script" id=17]
 [ext_resource path="res://scenes/characters/Caja.tscn" type="PackedScene" id=18]
+[ext_resource path="res://scenes/characters/caja_drop.tscn" type="PackedScene" id=19]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 245.0
+radius = 45.2036
+height = 207.123
 
 [node name="Outside" type="Node"]
 
@@ -472,6 +474,9 @@ position = Vector2( -2544.52, 3463.35 )
 [node name="Item" parent="level" instance=ExtResource( 12 )]
 position = Vector2( 7601.48, -863.645 )
 
+[node name="Item10" parent="level" instance=ExtResource( 12 )]
+position = Vector2( 7272.22, -246.059 )
+
 [node name="Item2" parent="level" instance=ExtResource( 12 )]
 position = Vector2( 7548.48, -1100.65 )
 item_type = "Magic Sword"
@@ -505,47 +510,45 @@ position = Vector2( 7347.32, -595.43 )
 item_type = "Coso"
 amount = 3
 
+[node name="caja_drop" parent="level" instance=ExtResource( 19 )]
+position = Vector2( 1571.08, 772.149 )
+scale = Vector2( 1.63336, 1.5376 )
+
+[node name="Caja" parent="level" instance=ExtResource( 18 )]
+position = Vector2( 1012.08, 1127.6 )
+scale = Vector2( 1.55236, 1.55236 )
+
+[node name="Caja3" parent="level" instance=ExtResource( 18 )]
+position = Vector2( 14.219, 225.497 )
+scale = Vector2( 1.55236, 1.55236 )
+
+[node name="Caja4" parent="level" instance=ExtResource( 18 )]
+position = Vector2( -555.265, 803.381 )
+scale = Vector2( 1.55236, 1.55236 )
+
+[node name="Caja5" parent="level" instance=ExtResource( 18 )]
+position = Vector2( 262.844, 1440.06 )
+scale = Vector2( 1.55236, 1.55236 )
+
+[node name="Caja6" parent="level" instance=ExtResource( 18 )]
+position = Vector2( 1285.34, -199.172 )
+scale = Vector2( 1.55236, 1.55236 )
+
 [node name="music_track" parent="." instance=ExtResource( 6 )]
 music_track = "res://music/310-world-map-loop.ogg"
 
 [node name="UI" parent="." instance=ExtResource( 2 )]
 
 [node name="win" type="Area2D" parent="."]
-position = Vector2( 2555, 4368 )
+position = Vector2( 5831.3, 939.874 )
 script = ExtResource( 17 )
+required_item = "Podadora"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="win"]
+position = Vector2( 8.46631, 76.1953 )
 shape = SubResource( 1 )
 
-[node name="cortadora de pasto" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2295, 3724 )
-item_type = "Cortadora de pasto"
-
 [node name="grass" parent="." instance=ExtResource( 3 )]
-
-[node name="Caja" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1220.1, 999.245 )
-scale = Vector2( 1.55236, 1.55236 )
-
-[node name="Caja2" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1722.39, 661.586 )
-scale = Vector2( 1.55236, 1.55236 )
-
-[node name="Caja3" parent="." instance=ExtResource( 18 )]
-position = Vector2( 222.243, 97.1419 )
-scale = Vector2( 1.55236, 1.55236 )
-
-[node name="Caja4" parent="." instance=ExtResource( 18 )]
-position = Vector2( -347.241, 675.026 )
-scale = Vector2( 1.55236, 1.55236 )
-
-[node name="Caja5" parent="." instance=ExtResource( 18 )]
-position = Vector2( 470.868, 1311.71 )
-scale = Vector2( 1.55236, 1.55236 )
-
-[node name="Caja6" parent="." instance=ExtResource( 18 )]
-position = Vector2( 1493.36, -327.527 )
-scale = Vector2( 1.55236, 1.55236 )
 
 [connection signal="body_entered" from="win" to="win" method="_on_body_entered"]
 

@@ -753,8 +753,8 @@ position = Vector2( -0.893555, -137.907 )
 position = Vector2( -1.31323, -70.0195 )
 
 [node name="Caja60" parent="Caja58/Caja59/Caja59" instance=ExtResource( 14 )]
-position = Vector2( -2332.78, 1850.79 )
-scale = Vector2( 0.950668, 0.950668 )
+position = Vector2( -2331.37, 1857.13 )
+scale = Vector2( 1.02611, 1.02611 )
 
 [node name="Caja58" parent="Caja58/Caja59/Caja59/Caja60" instance=ExtResource( 14 )]
 position = Vector2( -4.32056, -345.005 )
@@ -766,7 +766,7 @@ position = Vector2( -2.60596, -277.298 )
 position = Vector2( -0.893555, -137.907 )
 
 [node name="Caja55" parent="Caja58/Caja59/Caja59/Caja60/Caja55" instance=ExtResource( 14 )]
-position = Vector2( 0.466675, -69.8968 )
+position = Vector2( -1.81763, -74.4655 )
 
 [node name="Caja54" parent="Caja58/Caja59/Caja59/Caja60" instance=ExtResource( 14 )]
 position = Vector2( -1.31323, -70.0195 )
@@ -938,7 +938,7 @@ position = Vector2( 11.049, -0.2012 )
 [node name="almacen_inside" type="Position2D" parent="." groups=[
 "spawnpoints",
 ]]
-position = Vector2( 556, 354 )
+position = Vector2( 7.12775, 0.832184 )
 
 [node name="Puerta dungeon" type="Area2D" parent="."]
 script = ExtResource( 17 )
