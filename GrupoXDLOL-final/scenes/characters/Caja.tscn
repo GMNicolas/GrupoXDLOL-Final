@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://textures/props/Caja/10HP.png" type="Texture" id=1]
 [ext_resource path="res://textures/props/Caja/4HP.png" type="Texture" id=2]
 [ext_resource path="res://textures/props/Caja/7HP.png" type="Texture" id=3]
 [ext_resource path="res://textures/props/Caja/0HP Nuevo.png" type="Texture" id=4]
 [ext_resource path="res://scenes/characters/Caja.gd" type="Script" id=5]
+[ext_resource path="res://scenes/characters/Player.tscn" type="PackedScene" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -72,6 +73,18 @@ tracks/0/keys = {
 "update": 1,
 "values": [ 0 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimatedSprite/shape:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=5]
 resource_name = "4 "
@@ -103,18 +116,22 @@ tracks/0/keys = {
 "values": [ 1 ]
 }
 
+[sub_resource type="Animation" id=7]
+resource_name = "vacia"
+
 [node name="Caja" type="Node2D"]
 position = Vector2( 486, 201 )
+scale = Vector2( 0.90087, 0.90087 )
 
 [node name="caja" type="Area2D" parent="."]
 script = ExtResource( 5 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="caja"]
-scale = Vector2( 0.43, 0.43 )
+scale = Vector2( 0.546995, 0.546995 )
 frames = SubResource( 1 )
 
 [node name="shape" type="CollisionShape2D" parent="caja"]
-position = Vector2( 0.5, -0.5 )
+position = Vector2( 0.500122, -0.5 )
 scale = Vector2( 1.68682, 1.68682 )
 shape = SubResource( 2 )
 
@@ -124,5 +141,11 @@ autoplay = "10"
 anims/10 = SubResource( 4 )
 "anims/4 " = SubResource( 5 )
 "anims/7 " = SubResource( 6 )
+anims/vacia = SubResource( 7 )
+"next/0 " = "vacia"
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+position = Vector2( 149.697, 151.816 )
+scale = Vector2( 0.472184, 0.472184 )
 
 [connection signal="area_entered" from="caja" to="caja" method="_on_caja_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://scenes/props/MushroomBig.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/misc/UI.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://scenes/props/Grass wall.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/props/Vertical grass wall.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/misc/win.gd" type="Script" id=17]
+[ext_resource path="res://scenes/characters/Caja.tscn" type="PackedScene" id=18]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 245.0
@@ -70,7 +71,9 @@ position = Vector2( 1549.98, 4358.35 )
 position = Vector2( 901.976, 615.355 )
 to_scene = "res://scenes/levels/HouseInside.tscn"
 
-[node name="house_outside" type="Position2D" parent="level/house" groups=["spawnpoints"]]
+[node name="house_outside" type="Position2D" parent="level/house" groups=[
+"spawnpoints",
+]]
 position = Vector2( -2.12201, 173.199 )
 
 [node name="flower" parent="level" instance=ExtResource( 7 )]
@@ -519,6 +522,30 @@ position = Vector2( 2295, 3724 )
 item_type = "Cortadora de pasto"
 
 [node name="grass" parent="." instance=ExtResource( 3 )]
+
+[node name="Caja" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1220.1, 999.245 )
+scale = Vector2( 1.55236, 1.55236 )
+
+[node name="Caja2" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1722.39, 661.586 )
+scale = Vector2( 1.55236, 1.55236 )
+
+[node name="Caja3" parent="." instance=ExtResource( 18 )]
+position = Vector2( 222.243, 97.1419 )
+scale = Vector2( 1.55236, 1.55236 )
+
+[node name="Caja4" parent="." instance=ExtResource( 18 )]
+position = Vector2( -347.241, 675.026 )
+scale = Vector2( 1.55236, 1.55236 )
+
+[node name="Caja5" parent="." instance=ExtResource( 18 )]
+position = Vector2( 470.868, 1311.71 )
+scale = Vector2( 1.55236, 1.55236 )
+
+[node name="Caja6" parent="." instance=ExtResource( 18 )]
+position = Vector2( 1493.36, -327.527 )
+scale = Vector2( 1.55236, 1.55236 )
 
 [connection signal="body_entered" from="win" to="win" method="_on_body_entered"]
 

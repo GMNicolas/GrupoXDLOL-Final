@@ -12,7 +12,7 @@ func _ready():
 
 
 
-#< >
+
 
 
 
@@ -25,4 +25,7 @@ func _on_caja_entered(area):
 			anims.play("4 ")
 		if hp <= 0 :
 			anims.play("0 ")
+		
 		print(hp)
+
+
