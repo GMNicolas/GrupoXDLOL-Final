@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://textures/house_inside.png" type="Texture" id=1]
 [ext_resource path="res://scenes/misc/Quest.tscn" type="PackedScene" id=2]
+[ext_resource path="res://textures/props/Almacen/Fondo.png" type="Texture" id=3]
 [ext_resource path="res://scenes/misc/Exit.gd" type="Script" id=4]
 [ext_resource path="res://scenes/characters/Player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/misc/MusicTrack.tscn" type="PackedScene" id=6]
@@ -35,23 +36,7 @@ texture = ExtResource( 1 )
 position = Vector2( 121.953, 46.7951 )
 scale = Vector2( 0.429412, 0.472678 )
 character_name = "Roberto"
-dialogs = [ "How do celebrities stay cool? They have many fans.", "Which is faster, hot or cold? Hot, because you can catch a cold.", "How do you organize a space party? You planet.", "Why are skeletons so calm? Because nothing gets under their skin.", "Why are elevator jokes so good? They work on so many levels.", "How do moths swim? Using the butterfly stroke.", "When does a joke become a dad joke? When it becomes apparent.", "Two guys walk into a bar and sit down at a table.
-The barkeep comes over to them and asks, \"What can I serve you gentlemen?\"
-One of them says to the barkeep, \"I'll bet you a pitcher of your finest beer that I can lick my eye.\"
-The barkeep says, \"I've had guys come in here that could lick their nose but never have I ever seen one that could lick his eye. I'll take that bet.\"
-So the guy reaches up, pulls out his glass eye, licks it, and puts it back in his eye socket.
-The barkeep says, \"Damn, you got me.\" He brings the guys a pitcher of beer and goes about tending the bar.
-When that pitcher starts to get low the barkeep comes back and asks, \"Are you gentlemen ready for another?\"
-The same guy answers, \"I'll bet you another pitcher of your finest beer that I can bite my ear.\"
-The barkeep hesitates for a moment and looks at the guy's left ear, his right ear, and says, \"There's no way you've got an artificial ear. I'll take that bet.\"
-The guy reaches up, pulls out his false teeth, bites his ear with them, and puts them back in his mouth.
-The barkeep says, \"Damn, you got me again.\" He brings the guys another pitcher of beer and goes about tending the bar.
-A little later the betting guy is drunk, gets up and staggers over to the bar and lays a $100 bill on the bar saying, \"I'll bet you a hundred that I can pee and fill 10 shot glasses lined up on the bar with their rims touching without spilling a drop on the bar from 3 feet away.\"
-The barkeep says, \"It'll be worth $100 to see that so I bet you can't do it.\"
-He puts his own $100 on the bar, lines up 10 shot glasses and steps back.
-The drunk whips it out and pees all over the shot glasses, the bar, and the floor.
-The barkeep picks up the two $100 bills with a smile on his face, gets out his towel and starts to wipe it up. He then notices the drunk is smiling and says, \"I just made $100, you just LOST $100, why are you smiling??\"
-The drunk says, \"you see they guy over there I've been drinking with all this time? I just bet him $1,000 that I could come over here, pee all over the bar, and that you'd wipe it up with a smile on your face.\"" ]
+dialogs = [ "Dale,anda no pierdas mas el tiempo." ]
 
 [node name="trigger" parent="house_inside/Roberto" index="2"]
 position = Vector2( -4, 53 )
@@ -91,6 +76,26 @@ spawnpoint = "house_outside"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="exit"]
 position = Vector2( 14.5903, -177.49 )
 shape = SubResource( 4 )
+
+[node name="Fondo" type="Sprite" parent="exit/CollisionShape2D"]
+position = Vector2( -1553.35, -551.275 )
+scale = Vector2( 1.79196, 2.48964 )
+texture = ExtResource( 3 )
+
+[node name="Fondo" type="Sprite" parent="exit/CollisionShape2D/Fondo"]
+position = Vector2( 935.991, -589.687 )
+scale = Vector2( 4.51983, 1 )
+texture = ExtResource( 3 )
+
+[node name="Fondo" type="Sprite" parent="exit/CollisionShape2D/Fondo/Fondo"]
+position = Vector2( 219.405, 710.775 )
+scale = Vector2( 0.375221, 1.43895 )
+texture = ExtResource( 3 )
+
+[node name="Fondo" type="Sprite" parent="exit/CollisionShape2D/Fondo/Fondo/Fondo"]
+position = Vector2( -708.082, 403.819 )
+scale = Vector2( 2.11006, 1 )
+texture = ExtResource( 3 )
 
 [node name="Character" parent="." instance=ExtResource( 5 )]
 position = Vector2( 4.19806, 260.181 )
