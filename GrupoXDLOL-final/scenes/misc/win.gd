@@ -15,5 +15,4 @@ func _on_win_body_entered(body):
 	if Inventory.get_item(required_item) >= required_amount:
 		Inventory.remove_item(required_item, required_amount)
 		get_tree().change_scene("res://scenes/levels/Win.tscn")
-	else :
 		pass # Replace with function body.
