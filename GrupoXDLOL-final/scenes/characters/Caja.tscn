@@ -110,7 +110,7 @@ position = Vector2( 486, 201 )
 script = ExtResource( 5 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="caja"]
-scale = Vector2( 0.47, 0.47 )
+scale = Vector2( 0.43, 0.43 )
 frames = SubResource( 1 )
 
 [node name="shape" type="CollisionShape2D" parent="caja"]
