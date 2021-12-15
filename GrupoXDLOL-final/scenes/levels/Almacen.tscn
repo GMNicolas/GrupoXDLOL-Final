@@ -753,7 +753,8 @@ position = Vector2( -0.893555, -137.907 )
 position = Vector2( -1.31323, -70.0195 )
 
 [node name="Caja60" parent="Caja58/Caja59/Caja59" instance=ExtResource( 14 )]
-position = Vector2( -2323.2, 1571.64 )
+position = Vector2( -2332.78, 1850.79 )
+scale = Vector2( 0.950668, 0.950668 )
 
 [node name="Caja58" parent="Caja58/Caja59/Caja59/Caja60" instance=ExtResource( 14 )]
 position = Vector2( -4.32056, -345.005 )

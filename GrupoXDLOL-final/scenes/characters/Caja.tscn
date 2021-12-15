@@ -1,11 +1,10 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://textures/props/Caja/10HP.png" type="Texture" id=1]
 [ext_resource path="res://textures/props/Caja/4HP.png" type="Texture" id=2]
 [ext_resource path="res://textures/props/Caja/7HP.png" type="Texture" id=3]
 [ext_resource path="res://textures/props/Caja/0HP Nuevo.png" type="Texture" id=4]
 [ext_resource path="res://scenes/characters/Caja.gd" type="Script" id=5]
-[ext_resource path="res://scenes/characters/Player.tscn" type="PackedScene" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -146,10 +145,6 @@ anims/10 = SubResource( 4 )
 "anims/7 " = SubResource( 6 )
 anims/vacia = SubResource( 7 )
 "next/0 " = "vacia"
-
-[node name="Player" parent="." instance=ExtResource( 6 )]
-position = Vector2( 149.697, 151.816 )
-scale = Vector2( 0.472184, 0.472184 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
