@@ -542,13 +542,14 @@ music_track = "res://music/310-world-map-loop.ogg"
 [node name="win" type="Area2D" parent="."]
 position = Vector2( 5831.3, 939.874 )
 script = ExtResource( 17 )
-required_item = "Podadora"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="win"]
 position = Vector2( 8.46631, 76.1953 )
 shape = SubResource( 1 )
 
 [node name="grass" parent="." instance=ExtResource( 3 )]
+
+[connection signal="body_entered" from="win" to="win" method="_on_win_body_entered"]
 
 [editable path="level/Desconocido"]
 [editable path="level/Pasto final"]
