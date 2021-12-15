@@ -44,7 +44,7 @@ rotation = 1.5708
 shape = SubResource( 3 )
 
 [node name="to_inside" type="Area2D" parent="."]
-position = Vector2( 7.79211, 0.0572205 )
+position = Vector2( -0.60743, -4.14255 )
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="to_inside"]

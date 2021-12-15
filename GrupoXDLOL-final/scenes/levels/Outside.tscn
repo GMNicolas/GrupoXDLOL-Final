@@ -57,14 +57,17 @@ dialogs = [ "¿Que haces vos aca afuera? es re peligroso, esta zona esta llena d
 position = Vector2( 0, 96 )
 
 [node name="Jorgito" parent="level" instance=ExtResource( 13 )]
-position = Vector2( 7976.98, -1279.65 )
+position = Vector2( 363.075, 920.764 )
 character_name = "Jorgito"
 
 [node name="Quest" parent="level/Jorgito" instance=ExtResource( 14 )]
-quest_name = "Life as a Delivery Guy"
-required_amount = 3
-initial_text = "TLDR; bring me 3 Generic Items"
-pending_text = "You forgot? I want 3 Generic Items"
+quest_name = "Decapitando escarabajos"
+required_item = "Bandit Head"
+required_amount = 5
+reward_item = "Llave de robertito"
+initial_text = "Que onda rey, estan re zarpaditos estos escarabajos. ¿Tenes ganas de ir a cagarlos a trompadas ? Traeme 5 de las cabezas de los pendijitos estos."
+pending_text = "Dale rey, ponele onda. "
+delivered_text = "Gracias bro, ahora no van a joder mas. Aca tenes la llave de robertito. "
 
 [node name="Character" parent="level" instance=ExtResource( 8 )]
 position = Vector2( 1549.98, 4358.35 )
@@ -72,11 +75,6 @@ position = Vector2( 1549.98, 4358.35 )
 [node name="house" parent="level" instance=ExtResource( 5 )]
 position = Vector2( 895.626, 615.355 )
 to_scene = "res://scenes/levels/HouseInside.tscn"
-
-[node name="house_outside" type="Position2D" parent="level/house" groups=[
-"spawnpoints",
-]]
-position = Vector2( 2.11578, 221.934 )
 
 [node name="flower" parent="level" instance=ExtResource( 7 )]
 position = Vector2( 3078.98, 1083.35 )
@@ -474,9 +472,6 @@ position = Vector2( -2544.52, 3463.35 )
 [node name="Item" parent="level" instance=ExtResource( 12 )]
 position = Vector2( 7601.48, -863.645 )
 
-[node name="Item10" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 7272.22, -246.059 )
-
 [node name="Item2" parent="level" instance=ExtResource( 12 )]
 position = Vector2( 7548.48, -1100.65 )
 item_type = "Magic Sword"
@@ -488,9 +483,6 @@ amount = 3
 
 [node name="Item6" parent="level" instance=ExtResource( 12 )]
 position = Vector2( 7136.29, -572.82 )
-
-[node name="Item11" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 5498.14, 1588.74 )
 
 [node name="Item5" parent="level" instance=ExtResource( 12 )]
 position = Vector2( 7342.27, -818.51 )
@@ -551,6 +543,11 @@ position = Vector2( 8.46631, 76.1953 )
 shape = SubResource( 1 )
 
 [node name="grass" parent="." instance=ExtResource( 3 )]
+
+[node name="house_outside" type="Position2D" parent="." groups=[
+"spawnpoints",
+]]
+position = Vector2( 1066.62, 732.918 )
 
 [connection signal="body_entered" from="win" to="win" method="_on_win_body_entered"]
 

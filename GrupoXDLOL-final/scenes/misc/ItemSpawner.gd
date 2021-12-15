@@ -6,7 +6,7 @@ Add this to any node. spawn instances an Item.tscn node with the defined values
 
 
 var item_scene = preload("res://scenes/items/Item.tscn")
-export(String) var item_type = "Llave"
+export(String) var item_type = "Llave de robertito"
 export(int) var amount = 1
 
 
