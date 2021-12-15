@@ -489,8 +489,11 @@ amount = 3
 [node name="Item6" parent="level" instance=ExtResource( 12 )]
 position = Vector2( 7136.29, -572.82 )
 
+[node name="Item11" parent="level" instance=ExtResource( 12 )]
+position = Vector2( 5498.14, 1588.74 )
+
 [node name="Item5" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 7338.27, -818.51 )
+position = Vector2( 7342.27, -818.51 )
 item_type = "Magic Sword"
 
 [node name="Item4" parent="level" instance=ExtResource( 12 )]
@@ -506,7 +509,7 @@ position = Vector2( 7612.61, -544.18 )
 item_type = "Magic Sword"
 
 [node name="Item7" parent="level" instance=ExtResource( 12 )]
-position = Vector2( 7347.32, -595.43 )
+position = Vector2( 7347.32, -599.425 )
 item_type = "Coso"
 amount = 3
 

@@ -1,6 +1,6 @@
 extends Area2D
 
-export(String) var item_type = "Llave"
+export(String) var item_type = "Podadora"
 export(int) var amount = 1
 
 func _ready():
