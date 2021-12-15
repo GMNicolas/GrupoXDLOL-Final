@@ -734,11 +734,24 @@ position = Vector2( -0.893555, -137.907 )
 [node name="Caja54" parent="Caja58/Caja59" instance=ExtResource( 14 )]
 position = Vector2( -1.31323, -70.0195 )
 
+[node name="Caja60" parent="Caja58/Caja59" instance=ExtResource( 14 )]
+position = Vector2( -4.18213, -873.953 )
+scale = Vector2( 0.871728, 0.871728 )
+
+[node name="Caja63" parent="Caja58/Caja59" instance=ExtResource( 14 )]
+position = Vector2( -4.8064, -828.304 )
+scale = Vector2( 0.801156, 0.801156 )
+
+[node name="Caja62" parent="Caja58/Caja59" instance=ExtResource( 14 )]
+position = Vector2( -5.49902, -777.632 )
+scale = Vector2( 0.731116, 0.731116 )
+
+[node name="Caja61" parent="Caja58/Caja59" instance=ExtResource( 14 )]
+position = Vector2( -6.26782, -721.384 )
+scale = Vector2( 0.811567, 0.811567 )
+
 [node name="Caja59" parent="Caja58/Caja59" instance=ExtResource( 14 )]
 position = Vector2( -2.37549, -410.579 )
-
-[node name="Caja58" parent="Caja58/Caja59/Caja59" instance=ExtResource( 14 )]
-position = Vector2( -4.32056, -345.005 )
 
 [node name="Caja57" parent="Caja58/Caja59/Caja59" instance=ExtResource( 14 )]
 position = Vector2( -2.60596, -277.298 )
@@ -753,26 +766,31 @@ position = Vector2( -0.893555, -137.907 )
 position = Vector2( -1.31323, -70.0195 )
 
 [node name="Caja60" parent="Caja58/Caja59/Caja59" instance=ExtResource( 14 )]
-position = Vector2( -2331.37, 1857.13 )
-scale = Vector2( 1.02611, 1.02611 )
+position = Vector2( -2320.1, 1882.5 )
+scale = Vector2( 1.16619, 1.16619 )
 
 [node name="Caja58" parent="Caja58/Caja59/Caja59/Caja60" instance=ExtResource( 14 )]
 position = Vector2( -4.32056, -345.005 )
+scale = Vector2( 1, 1 )
 
 [node name="Caja57" parent="Caja58/Caja59/Caja59/Caja60" instance=ExtResource( 14 )]
 position = Vector2( -2.60596, -277.298 )
+scale = Vector2( 1, 1 )
 
 [node name="Caja55" parent="Caja58/Caja59/Caja59/Caja60" instance=ExtResource( 14 )]
 position = Vector2( -0.893555, -137.907 )
+scale = Vector2( 1, 1 )
 
 [node name="Caja55" parent="Caja58/Caja59/Caja59/Caja60/Caja55" instance=ExtResource( 14 )]
 position = Vector2( -1.81763, -74.4655 )
+scale = Vector2( 1, 1 )
 
 [node name="Caja54" parent="Caja58/Caja59/Caja59/Caja60" instance=ExtResource( 14 )]
 position = Vector2( -1.31323, -70.0195 )
+scale = Vector2( 1, 1 )
 
 [node name="Caja59" parent="Caja58/Caja59/Caja59" instance=ExtResource( 14 )]
-position = Vector2( -4.08911, -414.006 )
+position = Vector2( -0.54126, -583.108 )
 
 [node name="Caja58" parent="Caja58/Caja59/Caja59/Caja59" instance=ExtResource( 14 )]
 position = Vector2( -4.32056, -345.005 )
@@ -781,19 +799,25 @@ position = Vector2( -4.32056, -345.005 )
 position = Vector2( -2.60596, -277.298 )
 
 [node name="Caja56" parent="Caja58/Caja59/Caja59/Caja59" instance=ExtResource( 14 )]
-position = Vector2( -2.60693, -206.32 )
+position = Vector2( -7.30054, -212.578 )
 
 [node name="Caja59" parent="Caja58/Caja59/Caja59/Caja59" instance=ExtResource( 14 )]
 position = Vector2( -4.08911, -414.006 )
 
 [node name="Caja58" parent="Caja58/Caja59/Caja59/Caja59/Caja59" instance=ExtResource( 14 )]
-position = Vector2( -4.32056, -345.005 )
+position = Vector2( -4.32056, -325.336 )
+
+[node name="Caja58" parent="Caja58/Caja59/Caja59/Caja59/Caja59/Caja58" instance=ExtResource( 14 )]
+position = Vector2( 1.03491, -69.0626 )
 
 [node name="Caja57" parent="Caja58/Caja59/Caja59/Caja59/Caja59" instance=ExtResource( 14 )]
-position = Vector2( -2.60596, -277.298 )
+position = Vector2( -4.24512, -265.824 )
 
 [node name="Caja55" parent="Caja58/Caja59/Caja59/Caja59/Caja59" instance=ExtResource( 14 )]
 position = Vector2( -0.893555, -137.907 )
+
+[node name="Caja55" parent="Caja58/Caja59/Caja59/Caja59/Caja59/Caja55" instance=ExtResource( 14 )]
+position = Vector2( -2.71289, -72.4053 )
 
 [node name="Caja54" parent="Caja58/Caja59/Caja59/Caja59/Caja59" instance=ExtResource( 14 )]
 position = Vector2( -1.31323, -70.0195 )

@@ -128,6 +128,7 @@ flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="pressed" from="new_game" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="controls" to="." method="_on_controls_pressed"]
