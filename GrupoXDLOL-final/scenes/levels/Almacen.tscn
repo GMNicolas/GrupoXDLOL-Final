@@ -932,7 +932,7 @@ position = Vector2( 141.889, 0.395264 )
 [node name="UI" parent="." instance=ExtResource( 2 )]
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 0, 0 )
+position = Vector2( 11.049, -0.2012 )
 
 [node name="almacen_inside" type="Position2D" parent="." groups=["spawnpoints"]]
 position = Vector2( 556, 354 )
