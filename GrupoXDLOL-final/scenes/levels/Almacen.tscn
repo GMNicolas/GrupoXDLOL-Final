@@ -27,6 +27,7 @@ extents = Vector2( 253.25, 592.75 )
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 position = Vector2( -164.049, -19.7988 )
 =======
 >>>>>>> parent of aeade30 (cajas acomodadas outside y caja que_free (no funcional))
@@ -35,6 +36,8 @@ position = Vector2( -164.049, -19.7988 )
 =======
 scale = Vector2( 1.00069, 1.00457 )
 >>>>>>> parent of b0f9afc (Merge branch 'main' of https://github.com/GMNicolas/GrupoXDLOL-Final)
+=======
+>>>>>>> parent of aeade30 (cajas acomodadas outside y caja que_free (no funcional))
 
 [node name="PuddleBig" type="Sprite" parent="."]
 position = Vector2( 7283, -104 )
@@ -47,7 +50,6 @@ texture = ExtResource( 10 )
 
 [node name="PuddleSmall3" type="Sprite" parent="."]
 position = Vector2( 4843, -220 )
-scale = Vector2( 0.983903, 1 )
 texture = ExtResource( 11 )
 
 [node name="PuddleBig3" type="Sprite" parent="."]
