@@ -65,8 +65,8 @@ quest_name = "Decapitando escarabajos"
 required_item = "Bandit Head"
 required_amount = 5
 reward_item = "Llave de robertito"
-initial_text = "Que onda rey, estan re zarpaditos estos escarabajos. ¿Tenes ganas de ir a cagarlos a trompadas ? Traeme 5 de las cabezas de los pendijitos estos."
-pending_text = "Dale rey, ponele onda. "
+initial_text = "Que onda rey, estan re zarpaditos estos escarabajos. ¿Tenes ganas de ir a cagarlos a trompadas ? Traeme 5 de las cabezas de los pendijitos estos. Los mas cercanos estan a la izquierda, pero son como ratas, estan en todos lados."
+pending_text = "Dale perro, ponele onda. "
 delivered_text = "Gracias bro, ahora no van a joder mas. Aca tenes la llave de robertito. "
 
 [node name="Character" parent="level" instance=ExtResource( 8 )]
