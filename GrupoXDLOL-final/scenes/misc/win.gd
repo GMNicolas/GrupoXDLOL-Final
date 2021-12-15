@@ -14,7 +14,7 @@ export(int) var required_amount = 1
 
 
 func _on_body_entered(body):
+	if body is Player:
+		get_tree().change_scene("res://scenes/levels/Win.tscn")
 	if Inventory.get_item(required_item) >= required_amount:
 		Inventory.remove_item(required_item, required_amount)
-		get_tree().change_scene("res://scenes/levels/Win.tscn")
-		

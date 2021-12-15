@@ -21,8 +21,8 @@
 [ext_resource path="res://scenes/characters/caja_drop.tscn" type="PackedScene" id=19]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 45.2036
-height = 207.123
+radius = 93.8882
+height = 0.546631
 
 [node name="Outside" type="Node"]
 
@@ -549,8 +549,6 @@ position = Vector2( 8.46631, 76.1953 )
 shape = SubResource( 1 )
 
 [node name="grass" parent="." instance=ExtResource( 3 )]
-
-[connection signal="body_entered" from="win" to="win" method="_on_body_entered"]
 
 [editable path="level/Desconocido"]
 [editable path="level/Pasto final"]

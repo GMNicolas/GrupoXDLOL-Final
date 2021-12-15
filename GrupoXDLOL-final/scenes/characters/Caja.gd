@@ -10,6 +10,8 @@ onready var static = get_node("StaticBody2D")
 func _ready():
 	if anims.play("vacia"):
 		queue_free()
+	if has_node("item_spawner"):
+		get_node("item_spawner").spawn()
 	pass 
 
 
