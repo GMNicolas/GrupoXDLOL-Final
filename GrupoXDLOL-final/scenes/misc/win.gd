@@ -16,12 +16,3 @@ func _on_win_body_entered(body):
 		Inventory.remove_item(required_item, required_amount)
 	if body is Player:
 		get_tree().change_scene("res://scenes/levels/Win.tscn")
-<<<<<<< HEAD
-<<<<<<< HEAD
-		pass # Replace with function body.
-=======
-	pass # Replace with function body.
->>>>>>> parent of 4d3b669 (win arreglado)
-=======
-	pass # Replace with function body.
->>>>>>> parent of 4d3b669 (win arreglado)
